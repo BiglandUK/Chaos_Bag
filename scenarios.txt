@@ -1,0 +1,1 @@
+{ "name":"The Gathering", "difficulty":"easy", "tokens":["plus1","plus1","zero","zero","zero","minus1","minus1","minus1","minus2","minus2","skull","skull","cultist","gravestone","terror","eldersign"]}

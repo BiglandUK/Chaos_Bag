@@ -1,0 +1,56 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/chtml1/DTD/xhtml-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Arkham Horror LCG: Chaos Bag</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="script.js" type = "text/javascript"></script>
+
+</head>
+
+<body onload="SwitchScenario()">
+<div id="main">
+<div id="ScenarioSelector">
+<select id="scenario" onchange="SwitchScenario()">
+	<option value='The Gathering'>The Gathering</option>
+	<option value='The Midnight Masks'>The Midnight Masks</option>
+	<option value='The Devourer Below'>The Devourer Below</option>
+</select>
+<select id="difficulty" onchange="SwitchScenario()">
+	<option value="Easy">Easy</option>
+	<option value="Standard" selected>Standard</option>
+	<option value="Hard">Hard</option>
+	<option value="Expert">Expert</option>
+</select>
+</div>
+<form id="BagContents">
+<img src="Images/+1.png" alt="+1" /><input type="number" name="+1" value="2" min="0" max="10" />
+<img src="Images/0.png" alt="0" /> <input type="number" name="0" value="3" min="0" max="10" />
+<img src="Images/-1.png" alt="-1" /><input type="number" name="-1" value="3" min="0" max="10" />
+<img src="Images/-2.png" alt="-2" /><input type="number" name="-2" value="2" min="0" max="10" />
+<img src="Images/-3.png" alt="-3" /><input type="number" name="-3" value="0" min="0" max="10" />
+<img src="Images/-4.png" alt="-4" /><input type="number" name="-4" value="0" min="0" max="10" />
+<img src="Images/-5.png" alt="-5" /><input type="number" name="-5" value="0" min="0" max="10" />
+<img src="Images/-6.png" alt="-6" /><input type="number" name="-6" value="0" min="0" max="10" />
+<img src="Images/-7.png" alt="-7" /><input type="number" name="-7" value="0" min="0" max="10" />
+<img src="Images/-8.png" alt="-8" /><input type="number" name="-8" value="0" min="0" max="10" />
+<br />
+<img src="Images/skull.png" alt="Skull" /><input type="number" name="skull" value="2" min="0" max="10" />
+<img src="Images/cultist.png" alt="Cultist" /><input type="number" name="cultist" value="1" min="0" max="10" />
+<img src="Images/gravestone.png" alt="Gravestone" /><input type="number" name="gravestone" value="1" min="0" max="10" />
+<img src="Images/elderone.png" alt="Elder One" /><input type="number" name="elderone" value="0" min="0" max="10" />
+<img src="Images/fail.png" alt="AutoFail" /> <input type="number" name="fail" value="1" min="0" max="10" />
+<img src="Images/eldersign.png" alt="Elder Sign" /><input type="number" name="eldersign" value="1" min="0" max="10" />
+
+
+
+
+</form>
+<button id="reset" onclick="SetUpBag()">Reach into the bag...</button>
+<div id="TokenDisplay">
+</div>
+</div>
+</body>
+
+</html>
